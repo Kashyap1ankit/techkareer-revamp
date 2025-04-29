@@ -18,7 +18,7 @@ export default function RootLayout({
         className={` bg-linear-to-b from-primary-bg to-secondary-bg min-h-screen max-w-7xl  mx-auto`}
       >
         <Navbar />
-        <div className="mt-12">{children}</div>
+        <div className="mt-44">{children}</div>
       </body>
     </html>
   );

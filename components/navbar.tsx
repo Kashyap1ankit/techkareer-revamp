@@ -1,15 +1,11 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { Montserrat } from "next/font/google";
-
-const roboto = Montserrat({
-  variable: "--font-roboto",
-  subsets: ["cyrillic"],
-});
+import { mona_sans } from "@/lib/font";
+import { CircleArrowRight } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between fixed top-12 -translate-x-1/2 left-1/2 w-1/2 ">
+    <div className="flex justify-between items-center fixed top-12 -translate-x-1/2 left-1/2 w-3/4 ">
       <Image
         src={"/logo.png"}
         width={200}
@@ -20,9 +16,10 @@ export default function Navbar() {
 
       <div>
         <Button
-          className={`text-white bg-primary-btn py-6 px-8 text-lg rounded-full text-black font-bold ${roboto.className}   hover:bg-primary-btn cursor-pointer`}
+          className={`text-white bg-zinc-200 py-6 px-10 text-lg rounded-full text-black font-bold ${mona_sans.className}   hover:bg-zinc-200 cursor-pointer tracking-wide flex justify-center items-center min-w-36`}
         >
-          Login
+          <span>Login</span>
+          <CircleArrowRight className="size-4" />
         </Button>
       </div>
     </div>

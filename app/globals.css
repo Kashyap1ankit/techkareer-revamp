@@ -118,7 +118,8 @@
   --color-primary-bg: #0b242a;
   --color-secondary-bg: #17414a;
   --color-primary-btn: #7ed6df;
-  /* --color-primary-btn: #59a0a8; */
+  --color-primary-border: #59a0a8;
+  --color-tertiary-bg: #34535b;
 }
 
 @layer base {
