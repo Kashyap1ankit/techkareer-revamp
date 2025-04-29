@@ -1,3 +1,4 @@
+import JobOpenings from "@/components/opening";
 import Testimonals from "@/components/testimonals";
 import HeroSection from "@/components/ui/hero-section";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="flex flex-col gap-52">
       <HeroSection />
       <Testimonals />
+      <JobOpenings />
     </div>
   );
 }

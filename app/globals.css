@@ -129,6 +129,7 @@
   --color-primary-btn: #7ed6df;
   --color-primary-border: #59a0a8;
   --color-tertiary-bg: #34535b;
+  --color-primary-text: #2d5342;
 }
 
 @layer base {

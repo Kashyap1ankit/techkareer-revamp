@@ -20,9 +20,10 @@ export default function Testimonals() {
         ease: "circOut",
       }}
       viewport={{ once: true }}
+      id="know-more"
     >
       <p className={`${mona_sans.className} text-5xl text-white`}>
-        What Our Client Say
+        What Our <span className="text-sky-300">Client</span> Say
       </p>
 
       <p className={`${roboto.className} w-1/2 text-gray-400 mx-auto mt-8`}>

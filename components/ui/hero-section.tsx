@@ -6,6 +6,12 @@ import { Pointer } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function HeroSection() {
+  const handleScroll = () => {
+    const element = document.getElementById("know-more");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="flex flex-col gap-12 text-center">
       {/* Star  */}
@@ -79,14 +85,10 @@ export default function HeroSection() {
               delay: 0.4,
             },
           }}
-          // className="mt-12 flex justify-between border-2"
         >
-          {/* <div className="flex flex-row items-center justify-center ">
-          <AnimatedTooltip items={companies} />
-        </div> */}
-
           <Button
             className={`text-white bg-zinc-200 py-6 px-10 text-lg rounded-full text-black font-bold ${mona_sans.className}   hover:bg-zinc-200 cursor-pointer tracking-wide flex justify-center items-center min-w-52 mx-auto shadow-md shadow-indigo-500/100 mt-12 `}
+            onClick={handleScroll}
           >
             <span>Know More</span>
             <Pointer className="size-6" />
