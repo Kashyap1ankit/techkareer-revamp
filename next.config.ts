@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "www.zarla.com",
       },
+      {
+        hostname: "www.techkareer.com",
+      },
     ],
   },
 };

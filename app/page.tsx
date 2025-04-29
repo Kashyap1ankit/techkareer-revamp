@@ -1,4 +1,5 @@
 import JobOpenings from "@/components/opening";
+import TalentPartners from "@/components/partners";
 import Testimonals from "@/components/testimonals";
 import HeroSection from "@/components/ui/hero-section";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <Testimonals />
       <JobOpenings />
+      <TalentPartners />
     </div>
   );
 }
