@@ -43,7 +43,7 @@ export default function HeroSection() {
       {/* Text hero  */}
       <div>
         <motion.p
-          className={`${mona_sans.className} font-bold text-8xl text-white `}
+          className={`${mona_sans.className} font-bold text-5xl break-before-all xl:text-8xl text-white `}
           initial={{ y: -50, opacity: 0 }}
           animate={{
             y: 0,
@@ -60,7 +60,7 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.p
-          className={`${roboto.className} text-xl w-1/2  text-gray-500  mx-auto mt-12 tracking-wide`}
+          className={`${roboto.className} text-md md:text-xl w-full lg:w-1/2  text-gray-500  mx-auto mt-12 tracking-wide`}
           initial={{ y: -50, opacity: 0 }}
           animate={{
             y: 0,

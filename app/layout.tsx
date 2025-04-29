@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` bg-linear-to-b from-primary-bg to-secondary-bg min-h-screen max-w-7xl  mx-auto`}
+        className={` bg-linear-to-b from-primary-bg to-secondary-bg min-h-screen max-w-7xl  mx-auto overflow-x-hidden px-4 md:px-0`}
       >
         <Navbar />
         <div className="mt-44">{children}</div>
@@ -23,5 +23,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// bg-[#1e1e1e]

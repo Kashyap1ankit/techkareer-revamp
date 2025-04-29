@@ -20,11 +20,13 @@ export default function TalentPartners() {
       }}
       viewport={{ once: true }}
     >
-      <p className={`${mona_sans.className} text-5xl text-white text-center`}>
+      <p
+        className={`${mona_sans.className} text-4xl md:text-5xl text-white text-center`}
+      >
         Our Talent<span className="text-sky-300"> Partners</span>
       </p>
 
-      <div className="flex justify-between items-center mt-12">
+      <div className="flex flex-wrap justify-between items-center mt-12">
         {[
           "https://www.techkareer.com/codingninjas.png",
           "https://www.techkareer.com/scaler.png",

@@ -22,11 +22,11 @@ export default function Testimonals() {
       viewport={{ once: true }}
       id="know-more"
     >
-      <p className={`${mona_sans.className} text-5xl text-white`}>
+      <p className={`${mona_sans.className} text-4xl md:text-5xl text-white`}>
         What Our <span className="text-sky-300">Client</span> Say
       </p>
 
-      <p className={`${roboto.className} w-1/2 text-gray-400 mx-auto mt-8`}>
+      <p className={`${roboto.className} md:w-1/2 text-gray-400 mx-auto mt-8`}>
         From reducing time-to-hire to improving team collaboration, our platform
         is trusted by HR professional & Founders to deliver results
       </p>

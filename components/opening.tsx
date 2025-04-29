@@ -22,23 +22,25 @@ export default function JobOpenings() {
       }}
       viewport={{ once: true }}
     >
-      <p className={`${mona_sans.className} text-5xl text-white text-center`}>
+      <p
+        className={`${mona_sans.className} text-4xl md:text-5xl text-white text-center`}
+      >
         100+ Dream Job<span className="text-sky-300"> Openings</span>
       </p>
 
       <p
-        className={`${roboto.className} w-1/2 text-gray-400 mx-auto text-center mt-8`}
+        className={`${roboto.className} md:w-1/2 text-gray-400 mx-auto text-center mt-8`}
       >
         Explore thousands of job opportunities and find your dream job with out
         comprehensive job search platform
       </p>
 
-      <div className="grid grid-cols-3 gap-4 mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-24 ">
         {jobOpenings.map((e, i) => {
           return (
             <div
               key={i}
-              className="flex flex-col items-left gap-8 bg-primary-bg p-4 rounded-2xl cursor-pointer"
+              className="group flex flex-col items-left gap-8 bg-primary-bg hover:bg-tertiary-bg duration-500 p-4 rounded-2xl cursor-pointer"
             >
               <Image
                 src={e.logo}
@@ -54,8 +56,8 @@ export default function JobOpenings() {
                     {e.role}
                   </p>
 
-                  <p className="text-gray-600 mt-2 text-xs">
-                    {e.location} work{" "}
+                  <p className="text-gray-600 group-hover:text-red-50  mt-2 text-xs">
+                    {e.location} work
                   </p>
                 </div>
 
@@ -64,10 +66,10 @@ export default function JobOpenings() {
                 </p>
 
                 <div className="flex justify-start gap-6">
-                  <p className="rounded-full px-6 py-2 bg-tertiary-bg text-xs text-white">
+                  <p className=" group-hover:bg-primary-bg rounded-full px-6 py-2 bg-tertiary-bg text-xs text-white">
                     {e.type}
                   </p>
-                  <p className="rounded-full px-6 py-2 bg-tertiary-bg text-xs text-white">
+                  <p className=" group-hover:bg-primary-bg rounded-full px-6 py-2 bg-tertiary-bg text-xs text-white">
                     {e.location}
                   </p>
                 </div>
