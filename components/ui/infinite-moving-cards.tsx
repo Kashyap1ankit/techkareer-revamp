@@ -35,7 +35,7 @@ export const InfiniteMovingCards = ({
 
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+      const scrollerContent = Array.from(scrollerRef.current.children); //eslint-disable-line
 
       getDirection();
       getSpeed();

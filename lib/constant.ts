@@ -1,5 +1,3 @@
-[, ,];
-
 export const companies = [
   {
     id: 1,

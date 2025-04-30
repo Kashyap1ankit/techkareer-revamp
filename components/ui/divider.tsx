@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { Users } from "lucide-react";
 
 export default function SeparatorWithText({
   text,
