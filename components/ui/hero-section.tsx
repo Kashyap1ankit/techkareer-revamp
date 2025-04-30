@@ -41,9 +41,9 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Text hero  */}
-      <div>
+      <div className="w-full px-4 text-center">
         <motion.p
-          className={`${mona_sans.className} font-bold text-5xl break-before-all xl:text-8xl text-white `}
+          className={`${mona_sans.className} font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-tight`}
           initial={{ y: -50, opacity: 0 }}
           animate={{
             y: 0,
@@ -56,19 +56,19 @@ export default function HeroSection() {
             ease: "circOut",
           }}
         >
-          Ready.Set.Hire
+          Ready. Set. Hire
         </motion.p>
 
         <motion.p
-          className={`${roboto.className} text-md md:text-xl w-full lg:w-1/2  text-gray-500  mx-auto mt-12 tracking-wide`}
+          className={`${roboto.className} text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl text-gray-400 mx-auto mt-6 sm:mt-8 tracking-wide`}
           initial={{ y: -50, opacity: 0 }}
           animate={{
             y: 0,
             opacity: 1,
-            transition: {
-              duration: 1.2,
-              delay: 0.35,
-            },
+          }}
+          transition={{
+            duration: 1.2,
+            delay: 0.35,
           }}
         >
           TechKareer has helped more than a dozen companies from USA, Dubai, and
@@ -80,18 +80,18 @@ export default function HeroSection() {
           animate={{
             y: 0,
             opacity: 1,
-            transition: {
-              duration: 1.2,
-              delay: 0.4,
-            },
+          }}
+          transition={{
+            duration: 1.2,
+            delay: 0.4,
           }}
         >
           <Button
-            className={`text-white bg-zinc-200 py-6 px-10 text-lg rounded-full text-black font-bold ${mona_sans.className}   hover:bg-zinc-200 cursor-pointer tracking-wide flex justify-center items-center min-w-52 mx-auto shadow-md shadow-indigo-500/100 mt-12 `}
+            className={`text-white bg-zinc-200 py-4 px-8 sm:py-5 sm:px-10 text-base sm:text-lg rounded-full text-black font-bold ${mona_sans.className} hover:bg-zinc-200 tracking-wide flex justify-center items-center min-w-40 sm:min-w-52 mx-auto shadow-md shadow-indigo-500/100 mt-10 sm:mt-12`}
             onClick={handleScroll}
           >
             <span>Know More</span>
-            <Pointer className="size-6" />
+            <Pointer className="size-5 sm:size-6 ml-2" />
           </Button>
         </motion.div>
       </div>

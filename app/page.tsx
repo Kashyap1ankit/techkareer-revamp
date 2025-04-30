@@ -6,7 +6,7 @@ import HeroSection from "@/components/ui/hero-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-36 md:gap-52">
+    <div className="flex flex-col gap-52">
       <HeroSection />
       <Testimonals />
       <JobOpenings />

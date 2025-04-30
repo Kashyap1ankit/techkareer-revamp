@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex justify-between items-center fixed top-12 -translate-x-1/2 left-1/2 w-3/4 duration-300 z-50 ${
+      className={`flex justify-between items-center fixed top-12 md:-translate-x-1/2 md:left-1/2 w-11/12 md:w-3/4 duration-300 z-50 ${
         isScrolled ? "backdrop-blur-lg bg-white/30 p-2 rounded-md" : ""
       }`}
     >
@@ -31,12 +31,12 @@ export default function Navbar() {
         width={200}
         height={200}
         alt="logo"
-        className=" rounded-md"
+        className="w-36 md:w-52 rounded-md"
       />
 
       <div>
         <Button
-          className={`text-white bg-zinc-200 py-6 px-10 text-lg rounded-full text-black font-bold ${mona_sans.className}   hover:bg-zinc-200 cursor-pointer tracking-wide flex justify-center items-center min-w-36`}
+          className={`text-white bg-zinc-200 md:py-6 md:px-10 text-sm md:text-lg rounded-full text-black font-bold ${mona_sans.className}   hover:bg-zinc-200 cursor-pointer tracking-wide flex justify-center items-center min-w-36`}
         >
           <span>Login</span>
           <CircleArrowRight className="size-4" />
